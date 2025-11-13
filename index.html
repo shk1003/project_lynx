@@ -44,8 +44,133 @@
                 </ul>
             </div>
         </header>
-        <main></main>
+        <main>
+            <div class="main_bnr"><!-- 메인배너 스와이퍼 -->
+                <div class="swiper" id="main_bnr_img"> 
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main_sl">
+                            <a href="#"><img src="./images/main_bnr.png" alt=""></a>
+                            <div class="main_txt">
+                                <span class="lynk_main_txt">LYNK 2025</span>
+                                <h2>F/W COLLECTION</h2>
+                                <h3>새로운 계절, 링스의 정제된 라인업<br>F/W 그 이상의 무드</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main_sl">
+                            <a href="#"><img src="./images/main_bnr.png" alt=""></a>
+                        </div>
+                    </div>
+                    <!--필요 시 사용(선택)-->
+                    <div class="swiper-button-prev">
+                        <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3333 26.6667L0 13.3333L13.3333 0L15.7 2.36667L4.73333 13.3333L15.7 24.3L13.3333 26.6667Z" fill="#DEDEDE"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.36667 26.6667L0 24.3L10.9667 13.3333L0 2.36667L2.36667 0L15.7 13.3333L2.36667 26.6667Z" fill="#DEDEDE"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category_img">
+                    <a href="#">
+                        <img src="./images/category_1.png" alt="">
+                        <span class="category_txt">MEN</span>
+                    </a>
+                </div>
+                <div class="category_img">
+                    <a href="#">
+                        <img src="./images/category_2.png" alt="">
+                        <span class="category_txt">WOMEN</span>
+                    </a>
+                </div>
+                <div class="category_img">
+                    <a href="#">
+                        <img src="./images/category_3.png" alt="">
+                        <span class="category_txt">OUTLET</span>
+                    </a>
+                </div>
+            </div>
+            <div class="new">
+                <div class="new_title">
+                    <h2>NEW ARRIVALS</h2>
+                    <p>필드 위, 새로운 스타일의 시작</p>
+                </div>
+                <div class="new_menu">
+                    <a href="#"><span>ALL</span></a>
+                    <a href="#"><span>아우터</span></a>
+                    <a href="#"><span>상의</span></a>
+                    <a href="#"><span>스커트</span></a>
+                    <a href="#"><span>가방</span></a>
+                </div>
+                <div class="swiper" id="new_item">
+                    <!--필수-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/thum_1.png"></a>
+                            <a href="#"><h3>[25FW] 여성 부클 퀼팅 패딩 베스트 L21E3JV255_IV</h3></a>
+                            <span class="new_price">249,000원</span>
+                            <span><del>498,000원</del></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/thum_1.png"></a>
+                            <a href="#"><h3>[25FW] 여성 부클 퀼팅 패딩 베스트 L21E3JV255_IV</h3></a>
+                            <span class="new_price">249,000원</span>
+                            <span><del>498,000원</del></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/thum_1.png"></a>
+                            <a href="#"><h3>[25FW] 여성 부클 퀼팅 패딩 베스트 L21E3JV255_IV</h3></a>
+                            <span class="new_price">249,000원</span>
+                            <span><del>498,000원</del></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/thum_1.png"></a>
+                            <a href="#"><h3>[25FW] 여성 부클 퀼팅 패딩 베스트 L21E3JV255_IV</h3></a>
+                            <span class="new_price">249,000원</span>
+                            <span><del>498,000원</del></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/thum_1.png"></a>
+                            <a href="#"><h3>[25FW] 여성 부클 퀼팅 패딩 베스트 L21E3JV255_IV</h3></a>
+                            <span class="new_price">249,000원</span>
+                            <span><del>498,000원</del></span>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/thum_1.png"></a>
+                            <a href="#"><h3>[25FW] 여성 부클 퀼팅 패딩 베스트 L21E3JV255_IV</h3></a>
+                            <span class="new_price">249,000원</span>
+                            <span><del>498,000원</del></span>
+                        </div>
+                    </div>
+                    <!--필요 시 사용(선택)-->
+                    <div class="swiper-scrollbar"></div>
+            </div>
+            </div>
+        </main>
         <footer></footer>
     </div>
+    <script>
+        const mainBnr = new Swiper('#main_bnr_img',{
+            autoplay:{delay:200000},
+            loop:true,
+            navigation:{
+                prevEl:'#main_bnr_img .swiper-button-prev',
+                nextEl:'#main_bnr_img .swiper-button-next'
+            },
+        })
+        const newItem = new Swiper('#new_item',{
+            autoplay:{delay:200000},
+            loop:true,
+            slidesPerView: 4.7,
+            spaceBetween:10,
+            scrollbar:{
+                el:'#new_item .swiper-scrollbar',
+            },
+        })
+    </script>
 </body>
 </html>

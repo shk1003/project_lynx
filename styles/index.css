@@ -1,8 +1,57 @@
+#wrap {max-width: 100%; min-width: 1800px;}
+
+/* 헤더 */
 header {
     display: flex; flex-flow: row nowrap; width: 100%; height: 62px; 
-    justify-content: space-between; align-items: center; position: sticky; background: yellow;
-    padding: 0 50px; text-align: center; 
+    justify-content: space-between; align-items: center; position: sticky; background: #fff;
+    padding: 0 50px; text-align: center; z-index: 999; position: absolute;
 
 }
-.gnb {display: flex; flex-flow: row nowrap; gap:80px ;}
+.gnb {display: flex; flex-flow: row nowrap; /* gap:80px ; */}
+.gnb li a {color: #4D4D4D; font-weight: 500; padding: 25px 40px;}
 .right_icon {display: flex; flex-flow: row nowrap; gap: 17px;}
+.right_icon li a {color: #4D4D4D; font-size: 0.75rem;}
+
+/* 메인배너 스와이퍼 */
+.swiper-slide .main_sl {position: relative;}
+.main_txt {position: absolute; z-index: 9999; top: 40%; left: 50%; transform: translateX(-50%); text-align: center;}
+.main_txt .lynk_main_txt {font-size: 3rem ;color:#E3E3E3 ; }
+.main_txt h2 {color:#E3E3E3; font-size:6rem; font-weight:600 ;} 
+.main_txt h3 {color:#E3E3E3; font-size:1.313rem; line-height: 150%; padding-top: 70px;} 
+
+.swiper-slide a {display: block;}
+.swiper-slide img {display: block;}
+
+/* .swiper-navigation-icon {color: #DEDEDE; font-size: 15px; width: 15px !important;} */
+.swiper-button-next svg, .swiper-button-prev svg {width: 15px !important;}
+.swiper-button-next svg {padding-right: 25px;}
+.swiper-button-prev svg {padding-left: 25px;}
+
+
+/* 카테고리 */
+.category .category_img > a {position: relative; display: block;}
+.category .category_img .category_txt {position: absolute; top: 50%; left: 50%; transform: translateX(-50%); z-index: 999;}
+.category {display: flex; flex-flow: row nowrap; width: 100%; overflow: hidden;}
+
+.category .category_img a::after {
+    position: absolute; content: ''; top: 0; left: 0; width: 100%; height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; transition: opacity 0.3s ease
+}
+.category_txt {font-size: 3rem; color: #FFFFFF; font-weight: 500; opacity: 0; transition: opacity 0.3s ease}
+
+.category .category_img a:hover::after {opacity: 1;}
+.category .category_img a:hover .category_txt {opacity: 1;}
+
+/* new 신상부분 */
+.new {margin-left: 140px; margin-top: 115px;}
+.new_title {display: flex; flex-flow: row nowrap; align-items: end; padding-bottom:50px ;}
+.new_title h2 {font-size: 2.25rem; color: #3D3D3D; font-weight: 500;}
+.new_title p {font-size: 0.875rem; color: #3D3D3D; font-weight: 300; padding-left: 15px;}
+.new_menu {padding-bottom: 20px;}
+.new_menu a:first-child span {color: #2B2B2B;}
+.new_menu a span {color: #7C7C7C; padding-right:30px;}
+
+#new_item .swiper-wrapper {margin-bottom: 35px;}
+#new_item .swiper-slide h3 {font-size: 0.938rem; color: #3D3D3D; font-weight: 500;padding:10px 0 25px ;}
+#new_item .swiper-slide .new_price {font-size: 1.25rem; color: #3D3D3D; font-weight: 600;}
