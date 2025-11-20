@@ -128,4 +128,63 @@ header {
 
 /* player 플레이어부분 */
 .player {width:1640px ; margin: 0 auto;}
-.player_inner {display: flex; flex-flow: row nowrap;}
+.player_content > img {padding-bottom: 30px;}
+.player_inner {display: flex; flex-flow: row nowrap; padding-bottom: 15px;}
+.player_txt {padding-left: 15px;}
+.player_txt h2 {font-size: 0.813rem; color: #3D3D3D; padding-top: 10px; padding-bottom: 37px; font-weight: 500;}
+.player_txt del {font-size:0.813rem ; color: #7C7C7C;}
+.player_txt span {font-size:0.875rem ; color: #3D3D3D; font-weight: 500;}
+.player_inner svg {padding-left: 133px; padding-top: 40px;}
+.player_array {display: flex; flex-flow: row nowrap; gap:45px ; margin-bottom: 167px;}
+
+/* magazine 매거진 부분 */
+.magazine {width: 100% ;height:737px ; background: #F3F3F3; display: flex; flex-flow: row nowrap; padding: 100px 140px; margin-bottom: 240px; }
+.magazine img {display: block;}
+.magazine_2 .magazine_bg {
+    width:373px ; height: 182px; background: #212121; color: #BCBCBC; 
+    font-family: 'Abhaya Libre', serif; font-size: 3rem; line-height:182px ; text-align: center;
+}
+
+.magazine_content1 {padding-right: 10px; padding-bottom: 11px;}
+.magazine_content2 {display: inline-block;}
+.magazine_content3 {padding-bottom: 10px; padding-right:11px ;}
+.magazine_content4 {padding-right:10px ;}
+
+
+.magazine_item {position: relative; height: 557px;}
+.overlay {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 999; text-align: center;}
+.overlay_last {top: 32%; left: 50%; transform: translateX(-50%); text-align: center;}
+.number {font-size:1.5rem ; color:#F2F2F2 ; padding-bottom: 16px;}
+.year {color:#F2F2F2 ; font-size:2rem ;padding-bottom: 66px;}
+.magazine_txt {color:#F2F2F2 ; font-size: 0.875rem; line-height: 150%;}
+.overlay p {color:#F2F2F2 ;}
+.overlay p:nth-of-type(2) {font-size: 1.188rem; font-weight: 500; margin-top: 25px;}
+
+
+.magazine_item::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.magazine_item:hover::after {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+/* ✅ [추가] .magazine_item 호버 시 텍스트 나타나게 함 */
+.magazine_item:hover .overlay {
+    opacity: 1;
+}
