@@ -184,7 +184,21 @@ header {
     opacity: 0; 
     transition: opacity 0.3s ease; 
 }
-/* ✅ [추가] .magazine_item 호버 시 텍스트 나타나게 함 */
+/*.magazine_item 호버 시 텍스트 나타나게 함 */
 .magazine_item:hover .overlay {
     opacity: 1;
 }
+
+/* 푸터 */
+footer {width: 100%; height:361px; background-color: #252525; }
+.f_content {display: flex; flex-flow: row nowrap; width: 1294px ; margin: 0 auto; padding-top: 68px; justify-content: space-between;}
+.f_left {display: flex; flex-flow: row nowrap;}
+
+.f_left .f_txt a{color: #C7C7C7; font-size: 0.938rem; display: block; padding-bottom: 25px;}
+.f_left .txt2 {padding-left: 73px;}
+.f_center > h3 {color: #C7C7C7; font-size: 0.938rem; padding-bottom:20px ;}
+.f_center  > span {color: #C7C7C7; font-size: 0.938rem; line-height: 150%;}
+.f_right > h3 {color: #C7C7C7; font-size: 0.938rem; padding-bottom: 20px; }
+.f_right .f_number {color: #E5E5E5; font-size: 2rem; font-weight: 500; display: block; padding-bottom: 9px;}
+.f_right > p {color: #C7C7C7; font-size: 0.938rem; line-height: 150%; padding-bottom:80px ;}
+.f_right span {color: #C7C7C7; font-size: 0.813rem; }
