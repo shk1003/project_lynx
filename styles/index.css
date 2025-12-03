@@ -20,6 +20,18 @@ header {
 .main_txt h2 {color:#E3E3E3; font-size:6rem; font-weight:600 ;} 
 .main_txt h3 {color:#E3E3E3; font-size:1.313rem; line-height: 150%; padding-top: 70px;} 
 
+.swiper-slide.second {position: relative;}
+.swiper-slide.second::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
 .swiper-slide a {display: block;}
 .swiper-slide img {display: block;}
 
